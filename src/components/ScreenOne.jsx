@@ -57,8 +57,8 @@ export default function ScreenOne() {
       </header>
 
       {/* ================= PAGE CONTENT ================= */}
-      <section className="min-h-screen bg-[#fbf6ef] flex items-center">
-        <div className="container mx-auto px-6">
+      <section className="bg-[#fbf6ef] h-[calc(100vh-120px)] overflow-hidden flex items-center">
+        <div className="max-w-7xl mx-auto px-6 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
             {/* LEFT CONTENT */}
@@ -137,8 +137,10 @@ export default function ScreenOne() {
               </p>
             </div>
 
-            {/* RIGHT SIDE (EMPTY FOR NOW) */}
-            <div className="hidden lg:flex justify-center items-center"></div>
+            {/* RIGHT SIDE (ILLUSTRATION PLACEHOLDER) */}
+            <div className="hidden lg:flex justify-center items-center">
+              {/* Illustration goes here */}
+            </div>
 
           </div>
         </div>

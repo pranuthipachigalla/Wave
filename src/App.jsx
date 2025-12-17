@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./components/Footer";
 import ScreenOne from "./pages/ScreenOne";
 import WaveSignup from "./components/SignUp";
-import WelcomePage from "./components/Welcome";
 
 export default function App() {
   return (
@@ -11,8 +11,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<ScreenOne />} />
         <Route path="/signup" element={<WaveSignup />} />
-        <Route path="/welcome" element={<WelcomePage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
