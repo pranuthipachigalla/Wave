@@ -57,9 +57,9 @@ export default function ScreenOne() {
       </header>
 
       {/* ================= PAGE CONTENT ================= */}
-      <section className="bg-[#fbf6ef] h-[calc(100vh-120px)] overflow-hidden flex items-center">
-        <div className="max-w-7xl mx-auto px-6 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-[#fbf6ef] min-h-[calc(100vh-72px)]">
+        <div className="max-w-7xl mx-auto px-6 pt-14 pb-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
             {/* LEFT CONTENT */}
             <div className="max-w-md">
@@ -109,6 +109,7 @@ export default function ScreenOne() {
                   <span className="flex-1 h-px bg-gray-300"></span>
                 </div>
 
+                {/* Google */}
                 <button
                   type="button"
                   className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-full hover:bg-gray-50 transition"
@@ -122,6 +123,22 @@ export default function ScreenOne() {
                     Sign up with Google
                   </span>
                 </button>
+
+                {/* Microsoft */}
+                <button
+                  type="button"
+                  className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-full hover:bg-gray-50 transition"
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                    alt="Microsoft"
+                    className="w-5 h-5"
+                  />
+                  <span className="text-sm font-medium">
+                    Sign up with Microsoft
+                  </span>
+                </button>
+
               </form>
 
               <p className="text-xs text-gray-500 mt-4">
@@ -137,11 +154,14 @@ export default function ScreenOne() {
               </p>
             </div>
 
-            {/* RIGHT SIDE (ILLUSTRATION PLACEHOLDER) */}
+           {/* RIGHT SIDE (ILLUSTRATION) */}
             <div className="hidden lg:flex justify-center items-center">
-              {/* Illustration goes here */}
+              <img
+                src="/assets/images/Screenone.png"
+                alt="Wave illustration"
+                className="mt-[50px] max-w-[520px] w-full h-auto object-contain"
+              />
             </div>
-
           </div>
         </div>
       </section>
