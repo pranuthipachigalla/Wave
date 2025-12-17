@@ -12,7 +12,7 @@ export default function ScreenOne() {
             {/* LOGO */}
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold text-gray-900">
-                wave
+                PayRollSoftware
               </span>
             </div>
 

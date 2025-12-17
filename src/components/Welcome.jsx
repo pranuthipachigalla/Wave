@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import illustrationStep1 from "../assets/illustration-step1.png";
+
 
 
 export default function Welcome() {
@@ -68,16 +70,16 @@ export default function Welcome() {
         );
     }
 
-    const isNextEnabled = subLegalSelected !== "";
+    const isNextEnabled = legalSelected !== "" || subLegalSelected !== "";
 
 
     return (
-        <div className="min-h-screen w-full grid grid-cols-1 lg:grid-cols-2">
+        <div className="min-h-screen w-full grid grid-cols-1 lg:grid-cols-2 ">
             {/* LEFT SECTION */}
-            <div className="flex items-center justify-center bg-white px-6 lg:px-20">
+            <div className="flex items-center justify-center bg-white px-6 lg:px-20 py-16 pb-24">
                 <div className="w-full max-w-[520px]">
                     {/* Heading */}
-                    <h1 className="text-[28px] font-semibold text-gray-900 mb-2">
+                    <h1 className="text-[28px] font-bold text-gray-900 mb-2">
                         Welcome to Wave!
                     </h1>
                     <p className="text-[15px] text-gray-600 mb-8">
@@ -366,6 +368,11 @@ export default function Welcome() {
                                 : "bg-indigo-300 cursor-not-allowed"
                             }`}
                         disabled={!isNextEnabled}
+                        onClick={() => {
+                            if (isNextEnabled) {
+                                window.location.href = '/Welcome2';
+                            }
+                        }}
                     >
                         Next
                     </button>
@@ -373,17 +380,22 @@ export default function Welcome() {
             </div>
 
             {/* RIGHT SECTION */}
-            <div className="relative hidden lg:flex items-center justify-center bg-[#FBF7F2]">
-                {/* Step text */}
-                <div className="absolute top-8 text-xs font-semibold tracking-wide text-indigo-500">
+            {/* RIGHT SECTION */}
+            <div className="relative hidden lg:flex items-center justify-center bg-[#FBF7F2] w-full min-h-screen">
+                {/* STEP TEXT */}
+                <div className="absolute top-8 text-xs font-semibold tracking-wide text-indigo-500 z-10">
                     STEP 1 OF 3
                 </div>
 
-                {/* Placeholder for illustration */}
-                <div className="w-[420px] h-[520px] bg-white rounded-2xl shadow-xl flex items-center justify-center">
-                    <span className="text-sm text-gray-400">Illustration Placeholder</span>
+                {/* CARD */}
+                <div className="relative w-[420px] h-[520px] bg-white rounded-2xl shadow-xl flex items-center justify-center">
+                    <img
+                        src={illustrationStep1}
+                        alt="illustration-step 1"
+                        className="w-full h-full object-contain"
+                    />
                 </div>
             </div>
         </div>
-    );
-}
+            );
+        }
