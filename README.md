@@ -8,3 +8,5 @@ Quick start:
 Files created: `index.html`, `vite.config.js`, `src/`, `tailwind.config.cjs`, `postcss.config.cjs`
 
 Tailwind is configured to scan `index.html` and `src/**/*.{js,jsx}`.
+# Wave
+NewProject
