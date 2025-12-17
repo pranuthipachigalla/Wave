@@ -6,6 +6,8 @@ import ScreenOne from "./pages/ScreenOne";
 import WaveSignup from "./components/SignUp";
 import StepThree from "./components/StepThree";
 import AccSecure from "./components/AccSecure";
+import Welcome from "./components/Welcome";
+import Welcome2Page from "./components/Welcome-Step2";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/signup" element={<WaveSignup />} />
         <Route path="/step3" element={<StepThree />} />
         <Route path="/accountSecure" element={<AccSecure />} />
+        <Route path="/welcome" element={<Welcome />} />
+        <Route path="/welcome2" element={<Welcome2Page />} />
       </Routes>
       <Footer />
     </Router>

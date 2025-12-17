@@ -2,17 +2,15 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#2b2b2b] text-white">
+    <footer className="fixed bottom-0 left-0 w-full bg-[#2b2b2b] text-white">
       <div className="max-w-[1200px] mx-auto px-6 py-2 flex items-center">
 
         {/* Left: Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 bg-[#1f6cff] rounded-md flex items-center justify-center text-xl font-bold leading-none">
-            w
+          <div className="w-9 h-9  rounded-md flex items-center justify-center text-xl font-bold leading-none">
+            PayRollSoftware
           </div>
-          <span className="text-xl font-semibold tracking-wide leading-none">
-            Wave
-          </span>
+          
         </div>
 
         {/* Right: Credit */}
