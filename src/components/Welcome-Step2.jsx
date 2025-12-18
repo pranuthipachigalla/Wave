@@ -45,8 +45,7 @@ export default function StepTwo() {
                 </span>
 
                 <img
-                    src="src/assets/illustration.png"   
-                    src="src/assets/illustration.png"  
+                    src="src/assets/illustration.png"     
                     alt="Illustration"
                     className="w-[360px] mb-10 bg-transparent"
                 />
