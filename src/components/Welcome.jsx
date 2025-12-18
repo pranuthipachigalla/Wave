@@ -123,7 +123,7 @@ export default function Welcome() {
                             What does your business do?
                         </label>
 
-                        {/* Dropdown trigger */}
+                        {/* Dropdown  */}
                         <button
                             type="button"
                             onClick={() => setOpen(!open)}
@@ -191,6 +191,7 @@ export default function Welcome() {
                         )}
                     </div>
 
+                   
                     {/* Legal structure */}
                     <div className="mb-6 relative">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -378,8 +379,9 @@ export default function Welcome() {
                 </div>
             </div>
 
-            {/* Right Section */}
+            {/* Right Section */}          
             <div className="relative hidden lg:flex items-center justify-center bg-[#FBF7F2] w-full min-h-screen">
+                /* STEP TEXT */
                 <div className="absolute top-8 text-xs font-semibold tracking-wide text-indigo-500 z-10">
                     STEP 1 OF 3
                 </div>
