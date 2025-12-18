@@ -38,7 +38,7 @@ export default function StepTwo() {
 
     return (
         <div className="min-h-screen w-full grid grid-cols-1 lg:grid-cols-2">
-            {/* LEFT SECTION — Illustration placeholder */}
+            {/* Left Section */}
             <div className="hidden lg:flex flex-col items-center justify-center bg-[#FBF7F2] relative px-16">
                 <span className="absolute top-16 text-xs font-bold tracking-wide text-violet-500">
                     STEP 2 OF 3
@@ -46,7 +46,7 @@ export default function StepTwo() {
 
                 {/* Illustration */}
                 <img
-                    src="src/assets/illustration.png"   // replace later if needed
+                    src="src/assets/illustration.png"  
                     alt="Illustration"
                     className="w-[360px] mb-10 bg-transparent"
                 />
@@ -60,7 +60,7 @@ export default function StepTwo() {
                 </p>
             </div>
 
-            {/* RIGHT SECTION — Form */}
+            {/* right section — Form */}
             <div className="flex items-start justify-center bg-white px-6 lg:px-20 py-16 lg:py-24">
                 <div className="w-full max-w-[520px]">
                     <h1 className="text-[26px] font-bold text-gray-900 mb-2">
@@ -70,13 +70,13 @@ export default function StepTwo() {
                         Your answers help us set up your account
                     </p>
 
-                    {/* Year started — CUSTOM DROPDOWN */}
+                    {/* Year dropdown */}
                     <div className="mb-6 relative">
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                             What year did you start your business?
                         </label>
 
-                        {/* Trigger */}
+                        
                         <button
                             type="button"
                             onClick={() => setYearOpen(!yearOpen)}
@@ -210,7 +210,7 @@ export default function StepTwo() {
                             ))}
                         </div>
 
-                        {/* CONDITIONAL DROPDOWN */}
+                        {/* dropdown*/}
                         {payments === "Not yet, but I want to start" && (
                             <div className="mt-4 relative border-l-2 border-blue-200 pl-4">
                                 <label className="block text-sm font-medium text-gray-700 mb-2">
