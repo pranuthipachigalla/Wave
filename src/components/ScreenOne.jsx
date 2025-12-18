@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function ScreenOne() {
   return (
     <>
-      {/* ================= HEADER ================= */}
+      {/* HEADER  */}
       <header className="w-full bg-[#fbf6ef] border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-[72px]">
@@ -56,7 +56,7 @@ export default function ScreenOne() {
         </div>
       </header>
 
-      {/* ================= PAGE CONTENT ================= */}
+      {/* PAGE CONTENT */}
       <section className="bg-[#fbf6ef] min-h-[calc(100vh-72px)]">
         <div className="max-w-7xl mx-auto px-6 pt-14 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
@@ -154,7 +154,7 @@ export default function ScreenOne() {
               </p>
             </div>
 
-           {/* RIGHT SIDE (ILLUSTRATION) */}
+           {/* RIGHT SIDE  */}
             <div className="hidden lg:flex justify-center items-center">
               <img
                 src="/assets/images/Screenone.png"
