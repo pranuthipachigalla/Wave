@@ -28,7 +28,7 @@ export default function StepThree() {
 
   return (
     <div className="min-h-screen flex">
-      {/* LEFT */}
+      {/* Left */}
       <div className="w-1/2 bg-white flex flex-col justify-center px-20">
         <h2 className="text-2xl font-semibold text-gray-900 mb-2">
           Thanks!
@@ -38,7 +38,7 @@ export default function StepThree() {
         </p>
       </div>
 
-      {/* RIGHT */}
+      {/* Right */}
       <div className="w-1/2 bg-[#fbf6ef] flex flex-col justify-center px-16">
         <p className="text-xs font-semibold text-blue-600 mb-3">
           STEP 3 OF 3

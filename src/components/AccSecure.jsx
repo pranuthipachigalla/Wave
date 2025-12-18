@@ -27,7 +27,9 @@ export default function AccSecure() {
             Enter phone number
           </label>
 
-          <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 focus-within:ring-2 focus-within:ring-blue-500">
+          <div className="flex items-center border border-gray-300 
+          rounded-md px-3 py-2 focus-within:ring-2 
+          focus-within:ring-blue-500">
             <span className="text-sm text-gray-600 mr-2">+1</span>
             <input
               type="tel"
@@ -43,7 +45,9 @@ export default function AccSecure() {
           </p>
         </div>
 
-        <button className="mt-6 w-full max-w-sm py-3 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition">
+        <button className="mt-6 w-full max-w-sm py-3 
+        rounded-full bg-blue-600 text-white text-sm 
+        font-semibold hover:bg-blue-700 transition">
           Next
         </button>
 

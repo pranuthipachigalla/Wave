@@ -4,19 +4,19 @@ import { Link } from "react-router-dom";
 export default function ScreenOne() {
   return (
     <>
-      {/* ================= HEADER ================= */}
+      {/* Header */}
       <header className="w-full bg-[#fbf6ef] border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex items-center justify-between h-[72px]">
+          <div className="flex items-center justify-between  h-[72px]">
 
-            {/* LOGO */}
+            {/* Logo */}
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold text-gray-900">
                 PayRollSoftware
               </span>
             </div>
 
-            {/* NAVIGATION */}
+            {/* nav */}
             <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
               <div className="flex items-center gap-1 cursor-pointer hover:text-gray-900">
                 Features <span className="text-xs">▾</span>
@@ -35,18 +35,20 @@ export default function ScreenOne() {
               </div>
             </nav>
 
-            {/* ACTION BUTTONS */}
-            <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">
               <Link
                 to="/signin"
-                className="hidden sm:inline-flex px-4 py-2 rounded-full border border-blue-600 text-blue-600 text-sm font-medium hover:bg-blue-50 transition"
+                className="hidden sm:inline-flex px-4 py-2 
+                rounded-full border border-blue-600 text-blue-600 
+                text-sm font-medium hover:bg-blue-50 transition"
               >
                 Sign in
               </Link>
 
               <Link
                 to="/signup"
-                className="px-5 py-2 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition"
+                className="px-5 py-2 rounded-full bg-blue-600 
+                text-white text-sm font-semibold hover:bg-blue-700 transition"
               >
                 Sign up for free
               </Link>
@@ -56,12 +58,12 @@ export default function ScreenOne() {
         </div>
       </header>
 
-      {/* ================= PAGE CONTENT ================= */}
+      {/* PAGE CONTENT */}
       <section className="bg-[#fbf6ef] min-h-[calc(100vh-72px)]">
         <div className="max-w-7xl mx-auto px-6 pt-14 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-            {/* LEFT CONTENT */}
+            {/* Left */}
             <div className="max-w-md">
               <h1 className="text-[42px] leading-tight font-semibold text-[#1b2b6f] mb-4">
                 Manage your money like a boss
@@ -81,24 +83,27 @@ export default function ScreenOne() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    className="w-full px-4 py-3 rounded-md border 
+                    border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
                   />
                 </div>
 
-                <div>
+              <div>
                   <label className="block text-sm text-[#4a4a4a] mb-1">
                     Password
                   </label>
                   <input
                     type="password"
-                    placeholder="Create a password"
-                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                      placeholder="Create a password"
+                    className="w-full px-4 py-3 rounded-md border border-gray-300 
+                    focus:outline-none focus:ring-2 focus:ring-purple-400"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-[#d9b3ff] text-[#2b165f] py-3 rounded-full font-medium hover:bg-[#cfa2ff] transition"
+                  className="w-full bg-[#d9b3ff] text-[#2b165f] py-3 
+                  rounded-full font-medium hover:bg-[#cfa2ff] transition"
                 >
                   Create your free account
                 </button>
@@ -112,7 +117,8 @@ export default function ScreenOne() {
                 {/* Google */}
                 <button
                   type="button"
-                  className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-full hover:bg-gray-50 transition"
+                  className="w-full flex items-center justify-center 
+                  gap-3 border border-gray-300 py-3 rounded-full hover:bg-gray-50 transition"
                 >
                   <img
                     src="https://www.svgrepo.com/show/475656/google-color.svg"
@@ -127,7 +133,9 @@ export default function ScreenOne() {
                 {/* Microsoft */}
                 <button
                   type="button"
-                  className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-full hover:bg-gray-50 transition"
+                  className="w-full flex items-center 
+                  justify-center gap-3 border border-gray-300 
+                  py-3 rounded-full hover:bg-gray-50 transition"
                 >
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
@@ -154,7 +162,7 @@ export default function ScreenOne() {
               </p>
             </div>
 
-           {/* RIGHT SIDE (ILLUSTRATION) */}
+           {/* Right img */}
             <div className="hidden lg:flex justify-center items-center">
               <img
                 src="/assets/images/Screenone.png"

@@ -8,6 +8,7 @@ import StepThree from "./components/StepThree";
 import AccSecure from "./components/AccSecure";
 import Welcome from "./components/Welcome";
 import Welcome2Page from "./components/Welcome-Step2";
+import VerifyCode from './components/CodeVerify'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/accountSecure" element={<AccSecure />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/welcome2" element={<Welcome2Page />} />
+        <Route path="/Verify" element={<VerifyCode />} />
       </Routes>
       <Footer />
     </Router>
