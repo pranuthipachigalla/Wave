@@ -5,16 +5,16 @@ export default function Footer() {
     <footer className="fixed bottom-0 left-0 w-full bg-[#2b2b2b] text-white">
       <div className="max-w-[1200px] mx-auto px-6 py-2 flex items-center">
 
-        {/* Left: Brand */}
+        {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9  rounded-md flex items-center justify-center text-xl font-bold leading-none">
+          <div className="w-9 h-9  rounded-md flex items-center 
+          justify-center text-xl font-bold leading-none">
             PayRollSoftware
-          </div>
-          
+          </div>          
         </div>
 
-        {/* Right: Credit */}
-        <div className="flex items-center gap-10 text-xl text-gray-200 ml-auto leading-none">
+        <div className="flex items-center gap-10 text-xl 
+        text-gray-200 ml-auto leading-none">
           <span className="font-medium">
             curated by
           </span>

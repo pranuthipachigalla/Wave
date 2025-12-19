@@ -7,29 +7,28 @@ export default function WaveSignup() {
     <section className="min-h-screen flex items-center justify-center bg-white font-inter">
       <div className="w-full max-w-[420px] px-6 text-center">
 
-        {/* LOGO */}
+        {/* Logo*/}
         <div className="mb-6 flex justify-center items-center gap-2">
-          <span className="text-xl font-semibold text-gray-900">wave</span>
+          <span className="text-xl font-semibold text-gray-900">PayRollSoftware</span>
         </div>
 
-        {/* HEADING */}
+        {/* Heading */}
         <h1 className="text-[26px] font-semibold text-gray-900 mb-2">
-          Check out Wave — it’s free!
+          Check out PayRollSoftware — it’s free!
         </h1>
-
+        
         <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-          Wave helps freelancers, consultants, and small businesses around the
+          PayRollSoftware helps freelancers, consultants, and small businesses around the
           world simplify their finances.
         </p>
 
-        {/* EMAIL */}
+        {/* mail */}
         <input
           type="email"
           placeholder="Email address"
           className="w-full border border-gray-300 rounded-md px-4 py-3 mb-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
-        {/* PASSWORD */}
         <div className="relative mb-2">
           <input
             type={showPassword ? "text" : "password"}
@@ -53,14 +52,14 @@ export default function WaveSignup() {
         </button>
 
 
-        {/* DIVIDER */}
+        {/* Divider */}
         <div className="flex items-center gap-4 mb-5">
           <span className="flex-1 h-px bg-gray-200"></span>
           <span className="text-xs text-gray-400">or</span>
           <span className="flex-1 h-px bg-gray-200"></span>
         </div>
 
-        {/* GOOGLE BUTTON */}
+        {/* Google button*/}
         <button className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-full text-sm font-medium hover:bg-gray-50 transition">
           <img
             src="https://www.svgrepo.com/show/475656/google-color.svg"
@@ -70,7 +69,6 @@ export default function WaveSignup() {
           Sign up with Google
         </button>
 
-        {/* FOOTER TEXT */}
         <p className="text-xs text-gray-500 mt-6 leading-relaxed">
           By signing up, you are indicating that you have read and agree to the{" "}
           <span className="text-blue-600 cursor-pointer">Terms of Use</span> and{" "}
