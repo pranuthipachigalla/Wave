@@ -46,7 +46,7 @@ export default function StepTwo() {
 
                 {/* Illustration */}
                 <img
-                    src="src/assets/illustration.png"   // replace later if needed
+                    src="src/assets/illustration.png"   
                     alt="Illustration"
                     className="w-[360px] mb-10 bg-transparent"
                 />
